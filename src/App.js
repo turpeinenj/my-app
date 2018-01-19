@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const UserInfo = props => {
+export const Login = () => {
   return(
     <div>
-      {props.user.name}
+      <input id="email"/>
+      <input id="password"/>
     </div>
   )
 }
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <UserInfo user={ {name: "Jarkko"} }/>
+      <div>
+        
       </div>
     );
   }
+
 }
 
 export default App;
